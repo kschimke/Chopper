@@ -9,7 +9,10 @@ Chopper takes consensus reads (C3POa / TideHunter / similar tool output) of ONT 
 
 - [Python 3](https://www.python.org/downloads/)
 - [NumPy](https://pypi.org/project/numpy/)
+- [minimap2](https://github.com/lh3/minimap2)
 - [mappy](https://pypi.org/project/mappy/)
+- [samtools](https://www.htslib.org/download/)
+- [medaka](https://github.com/nanoporetech/medaka/blob/master/docs/installation.rst)
 
 --------------------------------------------------------------------------------
 
