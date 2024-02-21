@@ -1,6 +1,8 @@
 # Chopper 
 ## Assembling Plasmid Consensus Reads
 
+Chopper takes consensus reads (C3POa / TideHunter / similar tool output) of ONT plasmid sequencing data, determines plasmid size(s), and generates assemblies for individual plasmids. 
+
 --------------------------------------------------------------------------------
 
 ## Dependencies
