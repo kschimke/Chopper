@@ -136,8 +136,8 @@ def assembleReads(output_path,reads,subreads,subsample):
     os.system(f'samtools sort {minimapBAM} >{minimapSortedBAM}')
     os.system(f'samtools index {minimapSortedBAM}')
 #    os.system(f'medaka consensus {minimapSortedBAM} {medakaHDF} --model r941_min_sup_g507 > {medaka_messages} 2> {medaka_errors}')
-    os.system(f'/home/k2so/.local/bin/medaka consensus {minimapSortedBAM} {medakaHDF} --model r1041_e82_400bps_sup_v4.0.0 > {medaka_messages} 2> {medaka_errors}')
-    os.system(f'/home/k2so/.local/bin/medaka stitch {medakaHDF} {ref_fasta} {medaka_fasta} >> {medaka_messages} 2>> {medaka_errors}')
+    os.system(f'medaka consensus {minimapSortedBAM} {medakaHDF} --model r1041_e82_400bps_sup_v4.0.0 > {medaka_messages} 2> {medaka_errors}')
+    os.system(f'medaka stitch {medakaHDF} {ref_fasta} {medaka_fasta} >> {medaka_messages} 2>> {medaka_errors}')
 
     corrected_consensus = ''
     for name,seq,qual,comment in mp.fastx_read(medaka_fasta,read_comment=True):
