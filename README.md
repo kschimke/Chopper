@@ -19,7 +19,7 @@ Chopper takes consensus reads (C3POa / TideHunter / similar tool output) of ONT 
 ## Usage
 
 ```bash
-python3 PLNK.py mode 
+python3 Chopper.py mode 
                 -c consensus.fasta
                 -s subreads.fastq
                 -o /path/to/output/directory/ 
@@ -54,7 +54,7 @@ mode Comma separated list of modes to run. Defaults to detect,assemble
 
 -V   verbose, prints tool output to console otherwise creates log files
 
--v   print the PLNK version and exit
+-v   print the Chopper version and exit
 
 -h   print this help text and exit
 ```
